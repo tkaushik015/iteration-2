@@ -13,6 +13,10 @@ def load_batting_data():
 bowling_df = load_bowling_data()
 batting_df = load_batting_data()
 
+# Print columns for debugging
+print("Bowling Data Columns:", bowling_df.columns)
+print("Batting Data Columns:", batting_df.columns)
+
 # Get unique countries from both datasets
 countries = sorted(set(bowling_df['Country']).union(set(batting_df['Country'])))
 
